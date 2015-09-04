@@ -7,7 +7,7 @@ public class Assignment2Conditionals
 
     public static void main(String[] args) 
     {
-      Scanner scan = new Scanner (System.in);
+     Scanner scan = new Scanner (System.in);
            
      System.out.println("\t*************************************\n"
                       + "\t*       Steve's Calculator          *\n"
@@ -16,11 +16,13 @@ public class Assignment2Conditionals
      System.out.println(" 1: Math\n 2: Subtraction\n 3: Multiplication"
                      + "\n 4: Devision\n 5: Word Counter\n 6: Exit Program\n");
      
-      System.out.print("Please Pick An Option: ");
-      int userInputNum = scan.nextInt();
-      System.out.print("\n");
+  
+     System.out.print("Please Pick An Option: ");
+     int userInputNum = scan.nextInt();
+     System.out.print("\n");
       
-      if(userInputNum == 1)
+     
+     if(userInputNum == 1)
       {
         System.out.print("Please enter in your First variable: ");
         double var1 = scan.nextDouble();
@@ -29,7 +31,8 @@ public class Assignment2Conditionals
         double product = var1 + var2;
         System.out.println("The answer is: " + product + "\n");
       }
-      else if(userInputNum == 2)
+      
+     else if(userInputNum == 2)
       {
         System.out.print("Please enter in your First variable: ");
         double var1 = scan.nextDouble();
@@ -38,7 +41,8 @@ public class Assignment2Conditionals
         double product = var1 - var2;
         System.out.println("The answer is: " + product + "\n");
       }
-      else if(userInputNum == 3)
+     
+     else if(userInputNum == 3)
       {
         System.out.print("Please enter in your First variable: ");
         double var1 = scan.nextDouble();
@@ -47,7 +51,8 @@ public class Assignment2Conditionals
         double product = var1 * var2;
         System.out.println("The answer is: " + product + "\n");
       }
-      else if(userInputNum == 4)
+     
+     else if(userInputNum == 4)
       {
         System.out.print("Please enter in your First variable: ");
         double var1 = scan.nextDouble();
@@ -57,9 +62,26 @@ public class Assignment2Conditionals
         System.out.println("The answer is: " + product + "\n");
       }
       
-      //Word Counter Program
       else if(userInputNum == 5)
       {
+        wordCounter();
+      }
+            
+      
+      else if(userInputNum == 6)
+      {
+          System.out.println("Goodbye!");
+         System.exit(0);
+      }
+     
+      else
+          System.out.println("You did not enter a valid number.\n"
+                  + "Goodbye!");
+    }
+    //Word Counter Method
+    public static void wordCounter()
+    {
+        
         char L = 'L';
         char O = 'O';
         char V = 'V';
@@ -80,17 +102,6 @@ public class Assignment2Conditionals
         
         System.out.println("\nThe sum of the Ascii values is: " + (int)(sum)
                     + "\n");
-      }
-            
-      
-      else if(userInputNum == 6)
-      {
-          System.out.println("Goodbye!");
-         System.exit(0);
-      }
-      else
-          System.out.println("You did not enter a valid number.\n"
-                  + "Goodbye!");
     }
     
 }
