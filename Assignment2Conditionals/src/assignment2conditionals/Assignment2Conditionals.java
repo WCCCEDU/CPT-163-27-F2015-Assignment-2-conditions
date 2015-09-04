@@ -88,6 +88,9 @@ public class Assignment2Conditionals
           System.out.println("Goodbye!");
          System.exit(0);
       }
+      else
+          System.out.println("You did not enter a valid number.\n"
+                  + "Goodbye!");
     }
     
 }
