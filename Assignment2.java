@@ -87,20 +87,20 @@ public class Assignment2 {
                 
                 //TITLE AND DESCRIPTION
                 System.out.print("SONG LYRICS LOOP\n" + "\tEnter a number from"
-                        + " 0-8. This will be the number of times the loop"
+                        + " 1-8. This will be the number of times the loop"
                         + " executes: ");
                 numLoops = keyboard.nextInt();
                 
                 //validate entry
                 while (numLoops != 9) {
-                    if(numLoops <= 8 && numLoops > 0) {
+                    if(numLoops <= 8 && numLoops >= 0) {
                         for(i=0; i < numLoops; i++) {
                             System.out.println("\t\t" + lyrics[i]);
                         }
                     }else{
                         System.out.println("Try again");
                     } 
-                    System.out.print("\nEnter a number 0-8 to loop again or 9 to"
+                    System.out.print("\nEnter a number 1-8 to loop again or 9 to"
                             + " return to main menu: ");
                     numLoops = keyboard.nextInt();
                 }
