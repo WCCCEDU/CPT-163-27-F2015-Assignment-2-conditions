@@ -20,7 +20,7 @@ public class conditions {
         
         System.out.println("If you would like to play Simon Says please enter the number ten. To find out if you are eating health enter fifteen. "
                 + "To see if today is your lucky day enter twenty. To see if you were born lucky enter twenty-five. To see the value"
-                + "of the word beautiful enter the number 100. To exit type 1.");
+                + "of the word perfect enter the number 100. To exit type 1.");
         code=keyboard.nextInt();
         
     switch (code)
