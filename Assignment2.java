@@ -31,6 +31,7 @@ public class Assignment2 {
             input = keyboard.nextInt();
             
             if(input == 1){
+                
                 //ASSIGNMENT 1 CODE...
                 char uprH = 'H';
                 char lwrU = 'u';
@@ -50,7 +51,9 @@ public class Assignment2 {
                         lwrU + lwrF + lwrF;
 
                 System.out.println("\tThe sum of the word is: " + asciiSum);
+                
             }else if(input == 2){
+                
                 //IN CLASS PROJECT
                 Double yourPoints;
                 Double maxPoints;
@@ -75,9 +78,12 @@ public class Assignment2 {
                  } else {
                      grade = 'F';
                  };
+                 
                  System.out.println("\tYour grade: " + score + " " + grade);
+                 
             }else if(input == 3){
-              //LOOP LESSON
+                
+              //LOOPING LYRICS
                 Integer numLoops;
                 String[] lyrics = {
                   "Adventure Time,", "Come on, grab your friends", "We'll go to" , 
@@ -98,15 +104,16 @@ public class Assignment2 {
                             System.out.println("\t\t" + lyrics[i]);
                         }
                     }else{
-                        System.out.println("Try again");
+                        System.out.println("Oops! Try again");
                     } 
                     System.out.print("\nEnter a number 1-8 to loop again or 9 to"
                             + " return to main menu: ");
                     numLoops = keyboard.nextInt();
                 }
-                
+            } else if (input == 4) {
+                System.out.println("Programmer is furiously typing away...");
             } else if (input == 5) {
-                
+                System.out.println("Programmer is furiously typing away...");
             }else if (input == 6){  
                 bool = false;
             }else{
