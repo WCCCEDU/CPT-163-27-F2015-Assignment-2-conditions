@@ -48,7 +48,7 @@ public class conditions {
             {
                 System.out.println("Looks like you are on the right track!");
             }
-            else if (code < 0) 
+            else if (numberOfMeals < 3) 
             {        
                 System.out.println("You need to start eating more pizza.");
             } 
