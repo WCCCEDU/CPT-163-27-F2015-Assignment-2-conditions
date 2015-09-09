@@ -18,8 +18,10 @@ public class conditions {
         int numberOfMeals;
         Scanner keyboard = new Scanner(System.in);
         
-        System.out.println("If you would like to play Simon Says please enter the number ten. To find out if you are eating health enter fifteen. "
-                + "To see if today is your lucky day enter twenty. To see if you were born lucky enter twenty-five. To see the value"
+        System.out.println("If you would like to play Simon Says please enter the"
+                + " number ten. To find out if you are eating health enter fifteen. "
+                + "To see if today is your lucky day enter twenty. To see if you "
+                + "were born lucky enter twenty-five. To see the value"
                 + "of the word perfect enter the number 100. To exit type 1.");
         code=keyboard.nextInt();
         
@@ -64,7 +66,8 @@ public class conditions {
         }
             else if(yourAge <= 18)
             {  
-                System.out.println("You will not be lucky untill you take a programming class!");
+                System.out.println("You will not be lucky untill you take a"
+                        + " programming class!");
                 
             }
             break;
@@ -82,7 +85,8 @@ public class conditions {
             }
             else if (yourBirthYear > 2015)
             {
-                System.out.println("Sorry you are not lucky because yoou weren't born yet.");
+                System.out.println("Sorry you are not lucky because yoou "
+                        + "weren't born yet.");
             }
         break;
         case 100:
@@ -96,7 +100,8 @@ public class conditions {
             char letterSeven ='t';
             int asciiSum;
        
-            asciiSum= (int)letterOne + (int)letterTwo + (int)letterThree + (int)letterFour + (int)letterFive + (int)letterSix + (int)letterSeven; 
+            asciiSum= (int)letterOne + (int)letterTwo + (int)letterThree + (int)letterFour + 
+                    (int)letterFive + (int)letterSix + (int)letterSeven; 
        
        
             System.out.println("The word is 'perfect'.");
