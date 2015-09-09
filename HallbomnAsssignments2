@@ -1,0 +1,81 @@
+package assignment.pkg2;
+
+import java.util.Scanner;
+
+public class Assignment2 {
+
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+  
+        System.out.println("Enter a Country Rank.");
+        System.out.println("#1 America");
+        System.out.println("#2 Germany");
+        System.out.println("#3 Russia");
+        System.out.println("#4 UK");
+       double Rank=keyboard.nextDouble();
+              
+      if(Rank==1){
+          char aCharacter = 'A';
+        int asciiValueA= (int) 'A';
+        System.out.println(asciiValueA);
+        System.out.println(" Character M");
+                char mCharacter = 'M';
+        int asciiValueM= (int) 'M';
+        System.out.println(asciiValueM);
+        System.out.println(" Character E");
+                char eCharacter = 'E';
+        int asciiValueE= (int) 'E';
+        System.out.println(asciiValueE);
+        System.out.println(" Character R");
+                char rCharacter = 'R';
+        int asciiValueR= (int) 'R';
+        System.out.println(asciiValueR);
+        System.out.println(" Character I");
+                char iCharacter = 'I';
+        int asciiValueI= (int) 'I';
+        System.out.println(asciiValueI);
+        System.out.println(" Character C");
+                char cCharacter = 'C';
+        int asciiValueC= (int) 'C';
+         int TotalAscii= asciiValueA*2 + asciiValueM + asciiValueE + asciiValueR + asciiValueI + asciiValueC ;
+        System.out.println(asciiValueC);
+        System.out.println("Total Word Value");
+        System.out.println(TotalAscii);
+        if(Rank==2){
+            char gCharacter = 'G';
+        int asciiValueG= (int) 'G';
+        System.out.println("Character G");
+        System.out.println(asciiValueG);
+        System.out.println(" Character E");
+        System.out.println(asciiValueE);
+        System.out.println(" Character R");
+        System.out.println(asciiValueR);
+        System.out.println(" Character M"); 
+        System.out.println(asciiValueM);
+        System.out.println("Character A");
+        System.out.println(asciiValueA);
+            char nCharacter = 'N';
+        int asciiValueN= (int) 'N';
+        System.out.println("Character N");
+        System.out.println(asciiValueN);
+                    char yCharacter = 'Y';
+        int asciiValueY= (int) 'Y';
+        System.out.println("Character Y");
+        System.out.println(asciiValueY);
+        
+         int TotalAscii2= asciiValueG + asciiValueE + asciiValueR + asciiValueM + asciiValueA + asciiValueN+asciiValueY ;
+        System.out.println("Total Word Value");
+        System.out.println(TotalAscii2);
+        if(Rank==3){
+            System.out.println("Russia Ascii Value Coming Soon!");
+        if(Rank==4){
+             System.out.println("#4 UK Ascii value Coming Soon!");
+        if(Rank>4){
+             System.out.println("#Please enter an available rank from above");
+         }
+         }
+        }
+      }
+  }
+}
+    }
