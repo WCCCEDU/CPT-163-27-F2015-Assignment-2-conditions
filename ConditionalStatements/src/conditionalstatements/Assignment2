@@ -1,0 +1,32 @@
+
+package conditionalstatements;
+
+import java.util.Scanner;
+
+public class ConditionalStatements {
+
+    public static void main(String[] args) {
+        Scanner keyboard =new Scanner(System.in);
+        System.out.println("Please select which program you would like to open:");
+        System.out.println("For word counter enter  1 \nFor games enter 2 \nFor internet browser enter 3");
+        System.out.println("For Fallout enter 4 \nFor Starcraft enter 5 \n to quit enter 6");
+        int choice = keyboard.nextInt();
+        if(choice == 1){
+            System.out.println("you have chosen to open the word counter");
+        } else if(choice == 2){
+            System.out.println("you have chosen to open games");
+        } else if(choice == 3){
+            System.out.println("you have chosen to open the internet browser");
+        } else if(choice ==4){
+            System.out.println("you have chosen to open Fallout");
+        } else if(choice == 5){
+            System.out.println("you have chosen to open Starcraft");
+        } else if(choice == 6){
+            System.out.println("thank you for your time");
+            System.exit(0);
+        } else {
+            System.out.println("You have chosen poorly. Try again");
+        }
+    }
+    
+}
